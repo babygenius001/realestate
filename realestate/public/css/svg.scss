@@ -1,0 +1,229 @@
+/*----------------SVG----------------*/
+[class*=svg__] {
+    cursor: pointer; 
+}
+
+.svg {
+
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    color: var(--text-mark-color);
+    transition: .5s;
+
+    &__phone {
+        font-size: var(--text-size--regular);
+    }
+
+    &__search {
+        font-size: var(--text-size--xxl);
+    }
+
+    &__bag {
+        font-size: var(--text-size--xxl);
+    }
+
+    &__cog {
+        font-size: var(--text-size--xxl);
+    }
+
+    &__trash {
+        font-size: var(--text-size--regular);
+    }
+
+    &__envelope {
+        font-size: var(--text-size--xxxxxl);
+    }
+
+    &__bar {
+        font-size: var(--text-size--xxxxxl);
+    }
+
+    &__logout {
+        font-size: var(--text-size--xxxxxl);
+    }
+
+    &__item {
+        font-size: var(--text-size--x);
+    }
+
+    &__clone {
+        font-size: var(--text-size--m);
+    }
+
+    &__home {
+        font-size: var(--text-size--x);
+    }
+
+    &_sticky {
+        font-size: var(--text-size--m);
+    }
+
+    &__new {
+        font-size: var(--text-size--regular);
+    }
+
+    &__edit {
+        font-size: var(--text-size--x);
+    }
+
+    &__delete {
+        font-size: var(--text-size--x);
+    }
+    &__lock {
+        font-size: var(--text-size--xxxxl);
+    }
+    &__venus-mars {
+        font-size: var(--text-size--xxxxl);
+    }
+
+    &__calendar-alt {
+        font-size: var(--text-size--xxxxl);
+    }
+
+    &__user-alt {
+        font-size: var(--text-size--xxxxl);
+    }
+
+    &__comment_plus {
+        font-size: var(--text-size--xxxxl);
+    }
+
+    &__plus {
+        font-size: var(--text-size--x);
+    }
+
+    &__rocket {
+        font-size: var(--text-size--x);
+    }
+    &__history {
+        font-size: var(--text-size--x);
+    }
+    &__unlock {
+        font-size: var(--text-size--x);
+    }
+    &__clock {
+        font-size: var(--text-size--x);
+    }
+
+}
+
+
+/*----------------alert----------------*/
+[class*=alert__] {
+    cursor: pointer; 
+}
+
+.alert__group {
+    position: fixed;
+    bottom: 4%;
+    right: 4% ;
+    z-index: 999;
+}
+
+.alert {
+    
+    // display: inline-block;visible
+    display: block;
+    min-width: 30%;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    font-size: 16px;
+    animation-name: tada;
+    animation-duration: 3s;
+    animation-delay: 5s;
+    animation-iteration-count: 1;
+    transition: .5s;
+    animation-fill-mode: forwards;
+
+    &:hover {
+        color: red;
+
+        .alert__close {
+            color: red;
+            transition: .5s;
+        }
+    }
+
+    &__danger {
+        color: #721c24;
+        background-color: #f8d7da;
+        border-color: #f5c6cb;
+    }
+
+    &__success {
+        color: #155724;
+        background-color: #d4edda;
+        border-color: #c3e6cb;
+    }
+
+    &__primary {
+        color: #004085;
+        background-color: #cce5ff;
+        border-color: #b8daff;
+    }
+
+    &__secondary {
+        color: #383d41;
+        background-color: #e2e3e5;
+        border-color: #d6d8db;
+    }
+
+    &__warning {
+        color: #856404;
+        background-color: #fff3cd;
+        border-color: #ffeeba;
+    }
+
+    &__info {
+        color: #0c5460;
+        background-color: #d1ecf1;
+        border-color: #bee5eb;
+    }
+
+    &__close {
+        color: #721c24;
+        float: right;
+        transition: .5s;
+    }
+}
+
+/*----------------Tool----------------*/
+[class*=tool__] {
+    cursor: pointer; 
+}
+.tool {
+    
+    a {
+        color: #000 !important;
+        transition: .5s;
+        display: inline-flex;
+
+        &:hover { 
+            color: #ff000099 !important;
+
+            span {
+                color: #ff000099 !important;
+            }
+        }
+    }
+    
+    &__update {
+        
+        .svg__edit {
+            margin-right: 5px;
+        }
+
+    }
+    &__delete {
+        
+        .svg__delete {
+            margin-right: 5px;
+        }
+    }
+}

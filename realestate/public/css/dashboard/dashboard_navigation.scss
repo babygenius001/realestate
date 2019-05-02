@@ -1,0 +1,52 @@
+.dashboard_navigation {
+	padding-top: 15px;
+	margin: 0 -15px;
+	display: flex;
+
+	.navigation_items {
+	    padding: 15px 15px;
+	    width: 33.3333333%;
+		
+		a {
+			display: block;
+			color: #eee;
+			// background-color: #f7f7f7;
+			background-color: #222;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			text-align: center;
+			font-size: var(--text-size--regular);
+			text-transform: uppercase;
+		   	position: relative;
+		}
+
+		a:before, a:after {
+			background: rgba(255, 255, 255, 0.35) none repeat scroll 0 0;
+		    bottom: 0;
+		    top: 0;
+		    content: "";
+		    position: absolute;
+		    -webkit-transition: all .3s ease;
+		    -moz-transition: all .3s ease;
+		    -ms-transition: all .3s ease;
+		    -o-transition: all .3s ease;
+		    transition: all .3s ease;
+		    width: 0;
+		}
+		a:before {
+		    left: 0;
+		}
+		a:after {
+		    right: 0;
+		}
+
+		a:hover {
+
+			&:before,&:after {
+		    	width: 50%;
+			}
+		}
+	}
+
+}
+

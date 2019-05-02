@@ -1,0 +1,285 @@
+
+.bodyNews {
+	padding: 15px 0;
+	display: flex;
+	flex-wrap: nowrap;
+
+	a:visited {
+    	color: #666666;
+	}
+
+	.bodyNews_latest {
+		width: 30%;
+		box-sizing: border-box;
+		padding-right:15px;
+	}
+
+	.bodynews_hot {
+		width: 70%;
+		box-sizing: border-box;
+		padding-left:15px;
+	}
+	a:visited {
+    	color: #666666;
+	}
+}
+
+.bodyNews_latest .bodyNews_latest--inner {
+    flex-wrap: wrap;
+    flex-direction: column;
+
+	a:visited {
+    	color: #666666;
+	}
+
+	.newsItems {
+		width: 100%;
+		display: block;
+		display: flex;
+		padding-bottom: 15px;
+
+		&:nth-child(n+2) {
+			padding-top: 15px;
+		}
+
+		&:last-child {
+			padding-bottom: 0;
+		}
+
+		.newsItems_image {
+		    display: block;
+		    width: 30%;
+		    position: relative;
+		    padding-right: 15px;
+		    box-sizing: border-box;
+		    img {
+		    	height: 100%;
+   				width: 100%;
+		    }
+		}
+
+		.newsItems_content {
+		    width: 70%;
+			line-height: 1.4em;
+		    a {
+			    // padding-top: 10px;
+			    display: block;
+			    color: #666666;
+			    font-size: var(--text-size--x);
+		    }
+
+		    a:hover {
+    			color: var(--text-highlight-color);
+		    }
+		}
+	}
+}
+.bodynews_hot .bodynews_hot--inner {
+    flex-wrap: wrap;
+    flex-direction: row;
+
+	a:visited {
+    	color: #666666;
+	}
+
+    .bodynews_hot__main {
+		width: 70%;
+		padding-right: 15px;
+		box-sizing: border-box;
+
+		a {
+			padding-bottom: 15px;
+			font-size: var(--text-size--xxl);
+			display: block;
+		}
+
+		a:hover {
+		    color: var(--text-highlight-color);
+		}
+
+		img {
+			width: 100%;
+		}
+
+		p {
+			line-height: 1.4em;
+			text-align: justify;
+
+		}
+    }
+
+    .bodynews_hot__neighborhood {
+	    width: 30%;
+	    padding-left: 15px;
+	    box-sizing: border-box;
+	    display: flex;
+	    flex-wrap: nowrap;
+	    flex-direction: column;
+
+	    .neighborhood_item {
+	    	padding-top: 15px;
+	    	padding-bottom: 15px;
+			
+			a {
+				font-size: var(--text-size--x);
+				display: block;
+			}
+
+			a:hover {
+			    color: var(--text-highlight-color);
+			}
+
+	    	img {
+	    		width: 100%;
+	    	}
+	    }
+	    .neighborhood_item:first-child {
+	    	padding-top: 0;
+	    }
+    }
+}
+.bodyNews_list {
+	width: 70%;
+	margin: auto;
+
+	a:visited {
+    	color: #666666;
+	}
+
+
+	&--inner {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.list_item {
+		
+		width: 100%;
+		padding: 15px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		cursor: pointer;
+
+		&:hover {
+			background-color: var(--text-mark-color-lightest)
+		}
+
+		.list_item_image {
+			width: 20%;
+			padding-right: 30px;
+		}
+
+		img {
+			width: 100%;
+			// height: 100%;
+			object-fit: cover;
+		}
+		.list_item_content {
+			width: 70%;
+		}
+		
+		a.list_item__title {
+			padding-bottom: 15px;
+		}
+
+		a {
+		    display: block;
+		    color: #666666;
+		    font-size: var(--text-size--xl);
+
+		}
+		a:hover {
+		    color: var(--text-highlight-color);
+		}
+
+		p {
+			padding-bottom: 15px;
+			text-align: justify;
+
+			svg {
+				font-size: 11px;
+				margin-right: 5px;
+			}
+		}
+	}
+}
+
+#news {
+	padding: 15px;
+}
+#news {
+	
+	p, div {
+		padding-bottom: 15px;
+	}
+
+	.news_path {
+		text-transform: capitalize;
+	}
+	.news_title {
+		padding: 30px 0;
+		font-size: var(--text-size--xxxxxl);
+		text-align: center;
+		display: block;
+		line-height: var(--text-size--xxxxl);
+		text-transform: uppercase;
+		color: #4CAF50;
+	}
+
+	.news_image {
+		width: 80%;
+		margin: auto;
+		img {
+			width: 100%;
+			max-height: 200px;
+			object-fit: cover;
+		}
+	}
+
+	.news_time_creator {
+
+		.news_creator {
+			color: #222;
+			margin-right: 10px;
+		}
+
+		svg {
+			font-size: 11px;
+			margin-right: 5px;
+		}
+	}
+	
+	.news_summary {
+		text-indent: 50px;
+		text-align: justify;
+	}
+
+	.news_content {
+		display: block;
+		padding-bottom: 15px;
+		overflow: hidden;
+		
+		p {
+			display: block;
+			text-indent: 50px;
+			text-align: justify;
+			padding-bottom: 15px;
+		}
+
+		img {
+			text-align: center;
+			display: block;
+			margin: 0 auto;
+			box-sizing: border-box;
+			padding: 0 15px;
+		}
+
+		a {
+		  text-decoration: none;
+		  color: #008CBA;
+		}
+	}
+}

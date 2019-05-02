@@ -1,0 +1,145 @@
+.top_bar_navigation {
+	&--wrap {
+		display: -webkit-flex; /* Safari */
+  		display: flex;
+    	flex-direction: row;
+        transition: 1s;
+		width: 100%;
+		
+		@media screen and (min-width: 601px) and (max-width: 1000px) {
+			
+		}
+
+		@media screen and (min-width: 481px) and (max-width: 600px) {	
+
+		}
+
+		@media screen and (max-width: 480px) {	
+    		flex-direction: column;
+		}
+
+	}
+
+	.fast_tools, .logo {
+		display: inline-block;
+	}
+	.logo {
+		width: 15%;
+        transition: 1s;
+		background-color: #202020;
+
+
+		@media screen and (min-width: 601px) and (max-width: 1000px) {
+			width: 30%;
+		}
+
+		@media screen and (min-width: 481px) and (max-width: 600px) {	
+			width: 50%;
+		}
+
+		@media screen and (max-width: 480px) {	
+			width: 100%;
+		}
+
+  		a {
+    		padding: 25px 15px;
+    		display: block;
+            transition: 1s;
+    		text-align: center;
+
+    		@media screen and (max-width: 1000px) {
+				padding: 15px 5px;
+			}
+  		}
+
+		img {
+			max-width: 100%;
+		}
+
+	}
+
+	.fast_tools {
+		width: 85%;
+		background-color: #00CA79;
+        transition: 1s;
+		position: relative;
+
+		@media screen and (min-width: 601px) and (max-width: 1000px) {
+			width: 70%;
+		}
+
+		@media screen and (min-width: 481px) and (max-width: 600px) {	
+			width: 50%;
+		}
+
+		@media screen and (max-width: 480px) {	
+			width: 100%;
+		}
+
+		.header-right {
+			position: absolute;
+			top: 50%;
+			right:0;
+			transform: translateY(-50%);
+		    display: flex;
+		    flex-flow: row-reverse;
+
+
+			@media screen and (max-width: 480px) {	
+				width: 100% !important;
+				position: relative;
+				transform: none;
+				padding: 10px 0;
+    			justify-content: center;
+			}
+		}
+
+		.svg {
+			color: #fff !important;
+			padding-left:5px;
+		}
+
+		.btn {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+		    padding: 6px 12px;
+    		margin-right: 10px;
+		    margin-bottom: 0;
+		    font-size: 14px;
+		    font-weight: normal;
+		    line-height: 1.42857143;
+		    text-align: center;
+		    white-space: nowrap;
+		    vertical-align: middle;
+		    cursor: pointer;
+		    -webkit-user-select: none;
+		    -moz-user-select: none;
+		    -ms-user-select: none;
+		    user-select: none;
+		    background-image: none;
+		    border: 1px solid transparent;
+		    border-radius: 4px;
+		}
+
+		.btn-primary {
+		    color: #fff;
+		    background-color: #428bca;
+		    border-color: #357ebd;
+		}
+
+		.btn-info {
+		    color: #fff;
+		    background-color: #5bc0de;
+		    border-color: #46b8da;
+		}
+
+		.btn-danger {
+		    color: #fff;
+		    background-color: #d9534f;
+		    border-color: #d43f3a;
+		}
+		
+	}
+}
