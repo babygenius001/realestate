@@ -3,6 +3,10 @@ asdasddasdtestasdasd
 =======
 testasdasd
 >>>>>>> parent of 34a587b... commit to responsitory
+<<<<<<< HEAD
 asdasdasd
 123
 12312314
+=======
+asdasdasd
+>>>>>>> parent of 0c4e4d0... delete file sql
